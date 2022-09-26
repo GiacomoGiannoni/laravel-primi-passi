@@ -13,8 +13,34 @@
         
     </head>
     <body>
-        <h1>{{$title}}</h1>
+    <style>
+            html, body {
+                font-weight: 200;
+                height: 100vh;
+                margin-top: 50px;
+            }
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+            .content {
+                text-align: center;
+            }
+            .title {
+                font-size: 90px;
+            }
+            .m-b-md {
+                margin-bottom: 50px;
+            }
+        </style>
 
-        <a href="{{route('PageUser')}}">Pagina Utente</a>
+        <div class="content">
+            <div class="title m-b-md">
+                {{$title}}
+            </div>
+
+            <a class="links" href="{{route('PageUser')}}">Pagina Utente</a>
+        </div>
     </body>
 </html>

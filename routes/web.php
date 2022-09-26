@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 Route::get('/user', function () {
 
-    return view('user');
+    $listUser = ['Giacomo', 'Antonio', 'Gianluca', 'Susino', 'Pietro', 'Franco', 'altri'];
+
+    return view('user', ['listUser' => $listUser]);
 
 })->name('PageUser');
