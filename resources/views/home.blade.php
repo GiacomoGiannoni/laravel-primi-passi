@@ -14,5 +14,7 @@
     </head>
     <body>
         <h1>{{$title}}</h1>
+
+        <a href="{{route('PageUser')}}">Pagina Utente</a>
     </body>
 </html>

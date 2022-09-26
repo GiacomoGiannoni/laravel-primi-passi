@@ -16,4 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $stampTitle = 'Ciao Mondo di Laravel! :D';
     return view('home', ['title' => $stampTitle]);
-});
+})->name('PaginaHome');
+
+Route::get('/user', function () {
+
+    return view('user');
+
+})->name('PageUser');
